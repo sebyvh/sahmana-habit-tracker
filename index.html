@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><span class="checkmark">✔</span> Habit Tracker</h1>
+        </header>
+    
+        <!-- Weekdays Section -->
+        <div class="weekday">
+            <div class="day-column" id="monday">
+                <h2>Monday</h2>
+                <div class="button-list"></div>
+                <button class="add-button">+ Add Task</button>
+            </div>
+            <div class="day-column" id="tuesday">
+                <h2>Tuesday</h2>
+                <div class="button-list"></div>
+                <button class="add-button">+ Add Task</button>
+            </div>
+            <div class="day-column" id="wednesday">
+                <h2>Wednesday</h2>
+                <div class="button-list"></div>
+                <button class="add-button">+ Add Task</button>
+            </div>
+            <div class="day-column" id="thursday">
+                <h2>Thursday</h2>
+                <div class="button-list"></div>
+                <button class="add-button">+ Add Task</button>
+            </div>
+            <div class="day-column" id="friday">
+                <h2>Friday</h2>
+                <div class="button-list"></div>
+                <button class="add-button">+ Add Task</button>
+            </div>
+        </div>
+    
+        <!-- Weekends Section -->
+        <div class="weekend">
+            <div class="day-column" id="saturday">
+                <h2>Saturday</h2>
+                <div class="button-list"></div>
+                <button class="add-button">+ Add Task</button>
+            </div>
+            <div class="day-column" id="sunday">
+                <h2>Sunday</h2>
+                <div class="button-list"></div>
+                <button class="add-button">+ Add Task</button>
+            </div>
+        </div>
+    
+        <div class="footer">
+            <div class="streak">
+                <h3>Habit Streak <span id="reset-streak" style="cursor: pointer;">↻</span></h3>
+                <span class="flame">🔥</span> <span id="streak-number">0</span>
+            </div>
+            <div class="countdown">
+                <h3>Countdown</h3>
+                <span id="countdown-timer">00:00:00</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

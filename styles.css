@@ -1,0 +1,209 @@
+/* Global styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #f2f2f2;
+}
+
+/* Container for the overall layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkmark {
+    color: #00b894; /* Checkmark green */
+}
+
+/* Layout for the days of the week */
+.week {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.day-column {
+    background-color: #2c2c2c;
+    border-radius: 8px;
+    padding: 15px;
+    flex: 1;
+    max-width: 150px;
+    min-width: 150px;
+    text-align: center;
+}
+
+.day-column h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #f2f2f2;
+}
+
+/* Highlight the current day */
+.current-day {
+    border: 2px solid white;
+    opacity: 1; /* Full visibility for the current day */
+}
+
+/* Dim non-current days */
+.day-column:not(.current-day) {
+    opacity: 0.5;
+}
+
+/* Completed and incomplete tasks styling */
+.task-button.incomplete {
+    font-weight: bold;
+}
+
+.task-button.completed {
+    font-weight: bold;
+    text-decoration: line-through;
+    color: #00b894;
+}
+
+/* Non-current day tasks styling */
+.day-column:not(.current-day) .task-button {
+    opacity: 0.5;
+    font-weight: normal;
+}
+
+/* Consistent width for day columns */
+.day-column {
+    max-width: 150px; /* Adjust width to match footer styling */
+    min-width: 150px; /* Ensure minimum width for consistency */
+    text-align: left; /* Align text to the left */
+}
+
+
+
+/* Button List */
+.button-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.task-button {
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+    color: #f2f2f2;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px solid transparent;
+    text-align: left;
+}
+
+/* Incomplete task */
+.task-button.incomplete {
+    font-weight: bold;
+}
+
+/* Completed task */
+.task-button.completed {
+    text-decoration: line-through;
+    color: #00b894;
+}
+
+/* Non-current day tasks styling */
+.day-column:not(.current-day) .task-button {
+    opacity: 0.5; /* Make non-current day tasks more opaque */
+    font-weight: normal; /* Normal text for non-current day tasks */
+}
+
+/* Non-current day title styling */
+.day-column:not(.current-day) h2 {
+    font-weight: normal; /* Ensure non-current day titles are not bold */
+}
+
+/* Consistent width for day columns */
+.day-column {
+    max-width: 1250px; /* Adjust width to match footer styling */
+    min-width: 250px; /* Ensure minimum width for consistency */
+    text-align: left; /* Align text to the left */
+}
+
+/* Space between day columns */
+.day-column {
+    margin-bottom: 20px; /* Adjust the spacing as needed */
+}
+
+/* Align rename task prompt text to the left */
+.button-list {
+    text-align: left; /* Align buttons to the left in the button list */
+}
+
+/* Add Button styling */
+.add-button {
+    background-color: #00b894;
+    color: #1a1a1a;
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+}
+
+.add-button:hover {
+    background-color: #00d39a;
+}
+
+/* Current Day Add Task Button */
+.current-day .add-button {
+    font-weight: bold;
+}
+
+/* Inactive buttons (days that aren't active) */
+.inactive {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Footer styling */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #2c2c2c;
+    border-radius: 8px;
+}
+
+.streak, .countdown {
+    text-align: center;
+}
+
+.flame {
+    font-size: 2rem;
+}
+
+#streak-number {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#countdown-timer {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
